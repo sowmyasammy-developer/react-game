@@ -1,13 +1,73 @@
 body {
-  margin: 0;
+  text-align: center;
+  background-color: white;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h1 {
+  font-size: 100px;
+}
+
+.flat {
+  width: 100px;
+  font-size: 20px;
+  text-align: center;
+  border: 1px solid black;
+  outline: none;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 10px;
+}
+
+.btn {
+  text-decoration: none;
+  color: #ffffff;
+  background-color: rgb(0, 140, 255);
+}
+
+.btn:hover {
+  color: #ffffff;
+  background-color: #58d6d0;
+  border-color: #58d6d0;
+}
+
+.btn:disabled {
+  background-color: gray;
+  border-color: gray;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.btn:active {
+  background:  rgb(0, 140, 255);
+  border-color:  rgb(0, 140, 255);
+}
+
+.board {
+  display: flex;
+  background: white;
+  top: 30px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.boardItem {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  position: absolute;
+  border-radius: 10px;
+}
+
+.player {
+  z-index: 1;
+  transition: all 0.06s ease 0s;
+  background-image: url('./mario.png');
+}
+
+.greenmushroom {
+  background-image: url('./mushroom.png');
 }
